@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smoke Effect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <video
+        autoplay
+        muted
+        loop
+        src="https://static.videezy.com/system/resources/previews/000/013/128/original/Smoke_43_-_4K_res.mp4"
+      ></video>
+      <h1>
+        <span>s</span>
+        <span>h</span>
+        <span>u</span>
+        <span>b</span>
+        <span>h</span>
+        <span>a</span>
+        <span>m</span>
+      </h1>
+    </section>
+
+    <script>
+      function addAnimation() {
+        const spans = document.querySelectorAll("span");
+        let delay = 2;
+        spans.forEach((span) => {
+          span.style.opacity = 0;
+          span.style.animationDelay = `${delay}s`;
+          delay = delay + 0.5;
+        });
+      }
+
+      addAnimation();
+    </script>
+  </body>
+</html>
